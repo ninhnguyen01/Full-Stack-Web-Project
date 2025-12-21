@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2a2a2a;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.btn-grp{
+	width: 300px;
+	background-color: #000;
+	box-shadow: 0 4px 20px rgba(18, 22, 18, 0.9);
+	height: 60px;
+}
+button{
+	color: #6a6a6a;
+	background-color: transparent;
+	width: 33.33%;
+	height: 58px;
+	float: left;
+	position: relative;
+	font-size: 1.45rem;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	transition: all 0.4s;
+}
+button:hover{
+	font-size: 1.55rem;
+}
+.active{
+	color: #fdd901;
+	background-color: #0a0a0a;
+  box-shadow: inset 0 0 1px #fdd901;
+	animation: bounce 0.6s linear;
+}
+@keyframes bounce {
+	25%{font-size: 1.6em;}
+	50%{font-size: 1.35em;}
+	75%{font-size: 1.5em;}
+	100%{font-size: 1.45em;}
+}
+.indicator{
+	width: 100px;
+	height: 3px;
+	background-color: #fdd901;
+	position: absolute;
+	margin-top: 58px;
+	transition: all 0.4s;
+}
